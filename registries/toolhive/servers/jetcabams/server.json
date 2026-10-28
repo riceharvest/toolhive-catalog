@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.github.stacklok": {
+        "https://www.jetcabams.nl/mcp": {
+          "custom_metadata": {
+            "author": "Jet Cab AMS",
+            "homepage": "https://www.jetcabams.nl/"
+          },
+          "overview": "## Jet Cab AMS MCP Server\n\nThe official remote MCP server of Jet Cab AMS, a private chauffeur service in Amsterdam. Agents can list fixed-price Schiphol routes, private tours and vehicles with prices (list_services), get an exact signed price quote for a ride (get_quote), and send a booking request (request_booking). Booking requests are confirmed by the customer by email before the business sees them; nothing is charged through MCP. No authentication is needed.",
+          "status": "Active",
+          "tags": [
+            "remote",
+            "travel",
+            "booking",
+            "taxi",
+            "amsterdam",
+            "schiphol"
+          ],
+          "tier": "Official",
+          "tools": [
+            "list_services",
+            "get_quote",
+            "request_booking"
+          ]
+        }
+      }
+    }
+  },
+  "description": "Amsterdam chauffeur booking: fixed-price Schiphol transfers, custom rides and private tours",
+  "name": "io.github.stacklok/jetcabams",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.jetcabams.nl/mcp"
+    }
+  ],
+  "title": "Jet Cab AMS",
+  "version": "1.0.0"
+}

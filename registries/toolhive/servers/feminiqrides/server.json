@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.github.stacklok": {
+        "https://www.feminiqrides.nl/mcp": {
+          "custom_metadata": {
+            "author": "Feminiq Rides",
+            "homepage": "https://www.feminiqrides.nl/"
+          },
+          "overview": "## Feminiq Rides MCP Server\n\nThe official remote MCP server of Feminiq Rides, a chauffeur service in Amsterdam run by a female executive chauffeur. Agents can list Schiphol routes, private tours and vehicles with prices (list_services), get an exact signed price quote (get_quote), and send a ride request (request_booking). Requests are confirmed by the customer by email, then confirmed personally by the business; nothing is charged through MCP. No authentication is needed.",
+          "status": "Active",
+          "tags": [
+            "remote",
+            "travel",
+            "booking",
+            "taxi",
+            "amsterdam",
+            "schiphol"
+          ],
+          "tier": "Official",
+          "tools": [
+            "list_services",
+            "get_quote",
+            "request_booking"
+          ]
+        }
+      }
+    }
+  },
+  "description": "Amsterdam chauffeur booking with a female driver option: Schiphol transfers, rides and tours",
+  "name": "io.github.stacklok/feminiqrides",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.feminiqrides.nl/mcp"
+    }
+  ],
+  "title": "Feminiq Rides",
+  "version": "1.0.0"
+}
